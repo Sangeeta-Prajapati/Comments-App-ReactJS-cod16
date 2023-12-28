@@ -45,6 +45,7 @@ class Comments extends Component {
 
   renderCommentsList = () => {
     const {commentsList} = this.state
+
     return commentsList.map(eachComment => (
       <CommentItem
         key={eachComment.id}
@@ -94,6 +95,7 @@ class Comments extends Component {
 
   render() {
     const {nameInput, commentInput, commentsList} = this.state
+
     return (
       <div className="bg-container">
         <div className="comments-container">
@@ -116,13 +118,14 @@ class Comments extends Component {
                 onChange={this.onChangeCommentInput}
                 rows="6"
               />
-              <button type="button" className="add-button">
+              <button type="submit" className="add-button">
                 Add Comment
               </button>
             </form>
             <img
               src="https://assets.ccbp.in/frontend/react-js/comments-app/comments-img.png"
               alt="comments"
+              className="image"
             />
           </div>
           <hr className="line" />

@@ -61,7 +61,7 @@ const CommentItem = props => {
           />
         </button>
       </div>
-      <hr className="line" />
+      <hr className="comment-line" />
     </li>
   )
 }
